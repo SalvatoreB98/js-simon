@@ -21,13 +21,15 @@ setTimeout(function () {
                 alert("Attenzione inserire un numero!");
             }
         } while (isNaN(numeroUtente) == true);
-        // CONTROLLA SE IL NUMERO E' STATO INDOVINATO (CONTROLLA NELL'ARRAY DEI NUMERI RANDOM) E POI SI ASSICURA CHE QUEL NUMERO NON SIA GIA' STATO INDOVINATO  
-        if (numeriRandom.indexOf(numeroUtente) > -1 && numeriIndovinatiArray.indexOf(numeroUtente) == -1 ) {
+
+        if (numeriRandom.indexOf(numeroUtente) > -1) {
             numeriIndovinati++;
             numeriIndovinatiArray.push(numeroUtente);
-            console.log(numeriRandom);
-            console.log(numeriIndovinatiArray);
+            // RISOLVE BUG DI INSERIRE UN NUMERO TRA I 5 NUMERI PER 5 VOLTE
+            numeriRandom.splice(numeriRandom.indexOf(numeroUtente), 1);
         }
+        console.log(numeriRandom);
+        console.log(numeriIndovinatiArray);
     }
     if (numeriIndovinati > 0) {
         alert("Hai indovinato i seguenti numeri: \n" + numeriIndovinatiArray.join("  -  "))
