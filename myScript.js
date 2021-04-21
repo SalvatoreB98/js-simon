@@ -10,14 +10,14 @@ alert(numeriRandom.join("  -  "));
 console.log(numeriRandom);
 
 setTimeout(function () {
+    var numeriIndovinati=0;
     for (var i = 0; i < N; i++) {
-        var numeroUtente= prompt("Testa le tue capacità cognitive. Quanti numeri ricordi? Inserisci i numeri uno alla volta");
-        var numeriIndovinati=0;
-        if(numeriRandom.indexOf()){
+        var numeroUtente= parseInt(prompt("Testa le tue capacità cognitive. Quanti numeri ricordi? Inserisci i numeri uno alla volta"));
+        if(numeriRandom.indexOf(numeroUtente)>-1){
             numeriIndovinati ++;
         }
     }
-    prompt("HAI INDOVINATO " + numeriIndovinati + " numeri");
+    alert("HAI INDOVINATO " + numeriIndovinati + " numeri");
 }, delayInSec*1000);
 
 
