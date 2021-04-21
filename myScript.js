@@ -9,7 +9,7 @@ var rangeMax = 100;
 for (var i = 0; i < N; i++) {
     numeriRandom.push(randomNumber(rangeMin, rangeMax));
 }
-alert("Testa le tue capacità cognitive! Quanti di questi numeri ricordi dopo " + delayInSec + 1 + " secondi? \n" + numeriRandom.join("  -  "));
+alert("Testa le tue capacità cognitive! Quanti di questi numeri ricordi dopo " + delayInSec + " secondi? \n" + numeriRandom.join("  -  "));
 console.log(numeriRandom);
 
 setTimeout(function () {
