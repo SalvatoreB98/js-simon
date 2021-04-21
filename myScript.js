@@ -1,7 +1,9 @@
 var numeriRandom = [];
 var N = 5;
 var delayInSec = 3;
-numeriIndovinatiArray = [];
+var numeriIndovinatiArray = [];
+var rangeMin;
+var rangeMax;
 
 
 for (var i = 0; i < N; i++) {
@@ -31,7 +33,7 @@ setTimeout(function () {
         console.log(numeriRandom);
         console.log(numeriIndovinatiArray);
     }
-    
+
     // VARI CASI
     if (numeriIndovinati > 0) {
         alert("Hai indovinato i seguenti numeri: \n" + numeriIndovinatiArray.join("  -  "))
