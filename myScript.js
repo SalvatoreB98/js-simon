@@ -31,6 +31,7 @@ setTimeout(function () {
         console.log(numeriRandom);
         console.log(numeriIndovinatiArray);
     }
+    
     // VARI CASI
     if (numeriIndovinati > 0) {
         alert("Hai indovinato i seguenti numeri: \n" + numeriIndovinatiArray.join("  -  "))
