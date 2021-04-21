@@ -14,7 +14,7 @@ setTimeout(function () {
     var numeriIndovinati = 0;
     for (var i = 0; i < N; i++) {
         var numeroUtente = 0;
-
+        // CHIEDE ALL-UTENTE UN NUMERO, RIPETE SE IL VALORE INSERITO NON E' UN NUMERO
         do {
             numeroUtente = parseInt(prompt("Inserisci i numeri che ricordi uno alla volta"));
             if (isNaN(numeroUtente) == true) {
@@ -31,6 +31,7 @@ setTimeout(function () {
         console.log(numeriRandom);
         console.log(numeriIndovinatiArray);
     }
+    // VARI CASI
     if (numeriIndovinati > 0) {
         alert("Hai indovinato i seguenti numeri: \n" + numeriIndovinatiArray.join("  -  "))
     }
